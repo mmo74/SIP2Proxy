@@ -1,0 +1,9 @@
+[Unit]
+Description=SIP2Proxy (a modifying SIP2Proxy-Server)
+
+[Service]
+Type=simple
+ExecStart=/opt/sip2proxy/SIP2proxy.pl -l /var/log/sip2proxy.log
+
+[Install]
+WantedBy=multi-user.target

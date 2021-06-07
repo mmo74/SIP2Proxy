@@ -1,0 +1,13 @@
+/var/log/sip2proxy.log {
+	daily
+	missingok
+	rotate 99
+	compress
+	delaycompress
+	notifempty
+	create 644 root root
+	postrotate
+		/bin/systemctl restart sip2proxy.service
+	endscript
+
+}
