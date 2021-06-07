@@ -1,25 +1,25 @@
 # SIP2Proxy
 
-# Quick installation
+## Quick installation
 Copy the script SIP2Proxy.pl to a place of your choice (i.e. /opt/sip2proxy/)
 and start it.
 
 
-#Synopsis
+## Synopsis
 This Script takes some command line parameters (Defaults in brackets). 
 
-|short|long|description|default
-|---|---|---|
-|-v |--version    | print out the version
-|-h |--help       | give some intructions
-|-d |--daemonize  | run in background
-|-p |--port       | port to listen on| (4004)
-|-s |--sip2server | IP of the SIP2 server| (127.0.0.1)
-|-S |--sip2port   | port of the SIP2 server| (4000)
-|-l |--logfile    | name of the logfilename
+|short|long|description|default|
+|---|---|---|---|
+|-v |- -version    | print out the version| |
+|-h |- -help       | give some intructions| |
+|-d |- -daemonize  | run in background| |
+|-p |- -port       | port to listen on| (4004)|
+|-s |- -sip2server | IP of the SIP2 server| (127.0.0.1)|
+|-S |- -sip2port   | port of the SIP2 server| (4000)|
+|-l |- -logfile    | name of the logfilename| |
 
 
-# Purpose
+## Purpose
 This program acts as a SIP2 proxy server. It also can modify the SIP2 data on
 both ends (request and answer).
 
@@ -45,8 +45,8 @@ For me:
                     fields CV and CR. (see source code)
 
 
-# Longer installation instructions
-Copy the file SIP2Proxy.pl to a place of your choice. *(I use the directory
+## Longer installation instructions
+Copy the file *SIP2Proxy.pl* to a place of your choice. *(I use the directory
 /opt/sip2proxy)*. Now the script is ready to run.
 
 A systemd unit file and a logrotate file is also provided and can copied to the
@@ -55,8 +55,8 @@ adjusted to the local system (file path). Restart systemd and if necessary
 logrotate.
 
 
-# License
-GPLv3
+## License
+### GPLv3
 
 This program is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License version 3 as published by the Free
